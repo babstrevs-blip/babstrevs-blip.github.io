@@ -176,6 +176,20 @@
   footer{padding:38px 0 52px;font-size:15px;color:var(--ink2)}
   footer .fine{font-size:13.5px;line-height:1.62;max-width:78ch;margin:16px 0 0}
 
+   /* ---------- ocean waves (hero background) ---------- */
+  .hero{
+    position:relative;
+    padding:70px 0 175px;
+    background-color:#FFFFFF;
+    background-image:
+      url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 150' preserveAspectRatio='none'%3E%3Cpath d='M0,55 C150,105 300,5 450,55 C600,105 750,5 900,55 C1050,105 1125,30 1200,55 L1200,150 L0,150 Z' fill='%23EAF3F8'/%3E%3Cpath d='M0,82 C150,128 300,38 450,82 C600,126 750,36 900,82 C1050,128 1125,58 1200,82 L1200,150 L0,150 Z' fill='%23D9EAF3'/%3E%3Cpath d='M0,112 C200,144 400,80 600,112 C800,144 1000,86 1200,112 L1200,150 L0,150 Z' fill='%23C4DCEB'/%3E%3C/svg%3E"),
+      linear-gradient(to bottom,#FFFFFF 0%,#FFFFFF 40%,#F5FAFD 100%);
+    background-repeat:repeat-x,no-repeat;
+    background-position:bottom center,center;
+    background-size:1200px 150px,cover;
+  }
+  @media(max-width:700px){
+    .hero{padding-bottom:125px;background-size:900px 105px,cover}} 
   @media(prefers-reduced-motion:reduce){
     html{scroll-behavior:auto}
     *{transition:none!important;animation:none!important}
